@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Command;
+namespace BitAndBlack\IdmlJsonConverter\Command;
 
-use BitAndBlack\IdmlToJsonConverter\Exception\CannotReadFileException;
-use BitAndBlack\IdmlToJsonConverter\Exception\JsonEncodeException;
-use BitAndBlack\IdmlToJsonConverter\File\IDML;
-use BitAndBlack\IdmlToJsonConverter\MemoryLimit;
+use BitAndBlack\IdmlJsonConverter\Exception\CannotReadFileException;
+use BitAndBlack\IdmlJsonConverter\Exception\JsonEncodeException;
+use BitAndBlack\IdmlJsonConverter\File\IDML;
+use BitAndBlack\IdmlJsonConverter\MemoryLimit;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

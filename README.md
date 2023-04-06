@@ -58,7 +58,7 @@ Use the [IDML](./src/File/IDML.php) class and initialize it with the path to an 
 ```php 
 <?php
 
-use BitAndBlack\IdmlToJsonConverter\File\IDML;
+use BitAndBlack\IdmlJsonConverter\File\IDML;
 
 $idml = new IDML('/path/to/file.idml');
 $idmlContent = $idml->getContent();
@@ -92,7 +92,7 @@ Use the [JSON](./src/File/JSON.php) class and initialize it with an array of you
 ```php 
 <?php
 
-use BitAndBlack\IdmlToJsonConverter\File\JSON;
+use BitAndBlack\IdmlJsonConverter\File\JSON;
 
 $content = [
     'mimetype' => 'application/vnd.adobe.indesign-idml-package',

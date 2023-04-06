@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\ValueModifier;
+namespace BitAndBlack\IdmlJsonConverter\ValueModifier;
 
 use BitAndBlack\Helpers\ArrayHelper;
 

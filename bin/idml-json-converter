@@ -10,8 +10,8 @@
  * @license MIT
  */
 
-use BitAndBlack\IdmlToJsonConverter\Command\IDMLConvertJSONCommand;
-use BitAndBlack\IdmlToJsonConverter\Command\JSONConvertIDMLCommand;
+use BitAndBlack\IdmlJsonConverter\Command\IDMLConvertJSONCommand;
+use BitAndBlack\IdmlJsonConverter\Command\JSONConvertIDMLCommand;
 use Symfony\Component\Console\Application;
 
 /**

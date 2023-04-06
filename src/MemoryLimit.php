@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter;
+namespace BitAndBlack\IdmlJsonConverter;
 
 use Stringable;
 

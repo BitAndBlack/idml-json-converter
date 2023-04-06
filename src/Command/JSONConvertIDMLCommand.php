@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Command;
+namespace BitAndBlack\IdmlJsonConverter\Command;
 
-use BitAndBlack\IdmlToJsonConverter\Exception\FailedExtractingContentExpection;
-use BitAndBlack\IdmlToJsonConverter\Exception\UnknownFileException;
-use BitAndBlack\IdmlToJsonConverter\File\JSON;
+use BitAndBlack\IdmlJsonConverter\Exception\FailedExtractingContentExpection;
+use BitAndBlack\IdmlJsonConverter\Exception\UnknownFileException;
+use BitAndBlack\IdmlJsonConverter\File\JSON;
 use DOMException;
 use JsonException;
 use Symfony\Component\Console\Command\Command;

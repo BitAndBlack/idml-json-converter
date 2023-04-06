@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Tests\Converter;
+namespace BitAndBlack\IdmlJsonConverter\Tests\Converter;
 
-use BitAndBlack\IdmlToJsonConverter\Converter\ArrayToDomNodeConverter;
+use BitAndBlack\IdmlJsonConverter\Converter\ArrayToDomNodeConverter;
 use DOMDocument;
 use DOMException;
 use Generator;

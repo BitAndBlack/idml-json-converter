@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Utils;
+namespace BitAndBlack\IdmlJsonConverter\Utils;
 
-use BitAndBlack\IdmlToJsonConverter\Exception\UnknownFileException;
+use BitAndBlack\IdmlJsonConverter\Exception\UnknownFileException;
 use Stringable;
 
 class RootElementNameFromFileName implements Stringable

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Converter;
+namespace BitAndBlack\IdmlJsonConverter\Converter;
 
 use BitAndBlack\Helpers\StringHelper;
 use DOMDocument;

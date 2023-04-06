@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Tests\Converter;
+namespace BitAndBlack\IdmlJsonConverter\Tests\Converter;
 
-use BitAndBlack\IdmlToJsonConverter\Converter\DomNodeToArrayConverter;
+use BitAndBlack\IdmlJsonConverter\Converter\DomNodeToArrayConverter;
 use DOMDocument;
 use Generator;
 use PHPUnit\Framework\TestCase;

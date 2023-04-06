@@ -9,13 +9,13 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\File;
+namespace BitAndBlack\IdmlJsonConverter\File;
 
-use BitAndBlack\IdmlToJsonConverter\Converter\DomNodeToArrayConverter;
-use BitAndBlack\IdmlToJsonConverter\Exception\CannotReadFileException;
-use BitAndBlack\IdmlToJsonConverter\Exception\JsonEncodeException;
-use BitAndBlack\IdmlToJsonConverter\ValueModifier\AttributeSplitter;
-use BitAndBlack\IdmlToJsonConverter\ValueModifier\ValueNormalizer;
+use BitAndBlack\IdmlJsonConverter\Converter\DomNodeToArrayConverter;
+use BitAndBlack\IdmlJsonConverter\Exception\CannotReadFileException;
+use BitAndBlack\IdmlJsonConverter\Exception\JsonEncodeException;
+use BitAndBlack\IdmlJsonConverter\ValueModifier\AttributeSplitter;
+use BitAndBlack\IdmlJsonConverter\ValueModifier\ValueNormalizer;
 use DOMDocument;
 use JsonException;
 use ZipArchive;

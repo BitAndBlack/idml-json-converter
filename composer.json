@@ -1,5 +1,5 @@
 {
-    "name": "bitandblack/idml-to-json-converter",
+    "name": "bitandblack/idml-json-converter",
     "description": "Convert Adobe InDesign Markup Language Files (IDML) into JSON and JSON into IDML.",
     "license": "MIT",
     "type": "library",
@@ -32,7 +32,7 @@
         "bitandblack/composer-helper": "^1.0",
         "bitandblack/helpers": "^1.8",
         "maennchen/zipstream-php": "^2.4",
-        "symfony/console": "^6.2"
+        "symfony/console": "^6.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.0",
@@ -42,12 +42,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BitAndBlack\\IdmlToJsonConverter\\": "src/"
+            "BitAndBlack\\IdmlJsonConverter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BitAndBlack\\IdmlToJsonConverter\\Tests\\": "tests/"
+            "BitAndBlack\\IdmlJsonConverter\\Tests\\": "tests/"
         }
     },
     "bin": [

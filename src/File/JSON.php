@@ -9,13 +9,13 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\File;
+namespace BitAndBlack\IdmlJsonConverter\File;
 
-use BitAndBlack\IdmlToJsonConverter\Converter\ArrayToDomNodeConverter;
-use BitAndBlack\IdmlToJsonConverter\Exception\FailedExtractingContentExpection;
-use BitAndBlack\IdmlToJsonConverter\Exception\UnknownFileException;
-use BitAndBlack\IdmlToJsonConverter\Utils\RootElementNameFromFileName;
-use BitAndBlack\IdmlToJsonConverter\ValueModifier\ValueNormalizer;
+use BitAndBlack\IdmlJsonConverter\Converter\ArrayToDomNodeConverter;
+use BitAndBlack\IdmlJsonConverter\Exception\FailedExtractingContentExpection;
+use BitAndBlack\IdmlJsonConverter\Exception\UnknownFileException;
+use BitAndBlack\IdmlJsonConverter\Utils\RootElementNameFromFileName;
+use BitAndBlack\IdmlJsonConverter\ValueModifier\ValueNormalizer;
 use DOMException;
 use ZipStream\Exception\OverflowException;
 use ZipStream\Option\Archive;

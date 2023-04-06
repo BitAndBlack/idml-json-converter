@@ -9,9 +9,9 @@
  * @license MIT
  */
 
-namespace BitAndBlack\IdmlToJsonConverter\Exception;
+namespace BitAndBlack\IdmlJsonConverter\Exception;
 
-use BitAndBlack\IdmlToJsonConverter\Exception;
+use BitAndBlack\IdmlJsonConverter\Exception;
 use Throwable;
 
 class FailedExtractingContentExpection extends Exception

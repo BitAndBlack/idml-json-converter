@@ -16,8 +16,8 @@
  * to the original input file.
  */
 
-use BitAndBlack\IdmlToJsonConverter\File\IDML;
-use BitAndBlack\IdmlToJsonConverter\File\JSON;
+use BitAndBlack\IdmlJsonConverter\File\IDML;
+use BitAndBlack\IdmlJsonConverter\File\JSON;
 
 require_once dirname(__FILE__, 3) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
