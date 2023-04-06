@@ -1,5 +1,5 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/bitandblack/idml-json-converter)](http://www.php.net)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d18c9047422341e78e77c32503118035)](https://www.codacy.com/bb/wirbelwild/idml-json-converter/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc9b41c3e415497aaf6dcf81f20d1351)](https://app.codacy.com/gh/BitAndBlack/idml-json-converter/dashboard)
 [![Total Downloads](https://poser.pugx.org/bitandblack/idml-json-converter/downloads)](https://packagist.org/packages/bitandblack/idml-json-converter)
 [![License](https://poser.pugx.org/bitandblack/idml-json-converter/license)](https://packagist.org/packages/bitandblack/idml-json-converter)
 
