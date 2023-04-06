@@ -1,0 +1,41 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Bit&Black IDML-JSON Converter.
+ *
+ * @author Tobias Köngeter
+ * @copyright Copyright © Bit&Black
+ * @link https://www.bitandblack.com
+ * @license MIT
+ */
+
+use BitAndBlack\IdmlToJsonConverter\Command\IDMLConvertJSONCommand;
+use BitAndBlack\IdmlToJsonConverter\Command\JSONConvertIDMLCommand;
+use Symfony\Component\Console\Application;
+
+/**
+ * @param string $file
+ * @return mixed
+ */
+function includeIfExists(string $file): mixed
+{
+    if (file_exists($file)) {
+        return include $file;
+    }
+
+    return false;
+}
+
+if ((false === $loader = includeIfExists(dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php'))
+    && (false === $loader = includeIfExists(dirname(__FILE__, 4) . DIRECTORY_SEPARATOR . 'autoload.php'))
+) {
+    $msg = 'Run Composer at first to install all the dependencies: "$ composer install"'.PHP_EOL;
+    fwrite(STDERR, $msg);
+    exit(1);
+}
+
+$application = new Application('IDML-JSON converter');
+$application->add(new IDMLConvertJSONCommand());
+$application->add(new JSONConvertIDMLCommand());
+$application->run();
