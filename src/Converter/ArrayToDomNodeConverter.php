@@ -16,6 +16,9 @@ use DOMDocument;
 use DOMException;
 use DOMNode;
 
+/**
+ * @see \BitAndBlack\IdmlJsonConverter\Tests\Converter\ArrayToDomNodeConverterTest
+ */
 readonly class ArrayToDomNodeConverter
 {
     private DOMDocument $domDocument;

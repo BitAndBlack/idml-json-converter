@@ -14,6 +14,7 @@ namespace BitAndBlack\IdmlJsonConverter\Tests\Converter;
 use BitAndBlack\IdmlJsonConverter\Converter\DomNodeToArrayConverter;
 use DOMDocument;
 use Generator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class DomNodeToArrayConverterTest extends TestCase
@@ -29,9 +30,9 @@ class DomNodeToArrayConverterTest extends TestCase
     }
 
     /**
-     * @dataProvider provideTestCases
      * @param array<mixed> $outputExpected
      */
+    #[DataProvider('provideTestCases')]
     public function testConversion(string $xml, array $outputExpected): void
     {
         $this->domDocument->loadXML($xml);

@@ -13,9 +13,9 @@ namespace BitAndBlack\IdmlJsonConverter;
 
 use Stringable;
 
-class MemoryLimit implements Stringable
+readonly class MemoryLimit implements Stringable
 {
-    private readonly string $memoryLimit;
+    private string $memoryLimit;
 
     public function __construct()
     {

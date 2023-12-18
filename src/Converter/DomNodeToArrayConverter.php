@@ -13,6 +13,9 @@ namespace BitAndBlack\IdmlJsonConverter\Converter;
 
 use DOMNode;
 
+/**
+ * @see \BitAndBlack\IdmlJsonConverter\Tests\Converter\DomNodeToArrayConverterTest
+ */
 readonly class DomNodeToArrayConverter
 {
     /**
