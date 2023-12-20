@@ -124,8 +124,8 @@ file_put_contents(
 Bit&Black offers some more tools to handle IDML files:
 
 -   The [IDML-Creator](https://www.idml.dev/en/idml-creator-php.html) library that allows creating IDML content natively in PHP in an object-oriented way. (A demo is available [here](https://bitbucket.org/wirbelwild/idml-creator-demo).)
--   The [IDML-Writer](https://bitbucket.org/wirbelwild/idml-writer) library that can write IDML content into a valid IDML file.
--   The [IDML-Validator](https://bitbucket.org/wirbelwild/idml-validator) library that allows validating IDML files against the official schema from Adobe.
+-   The [IDML-Writer](https://www.idml.dev/en/idml-writer-php.html) library that can write IDML content into a valid IDML file.
+-   The [IDML-Validator](https://www.idml.dev/en/idml-validator-php.html) library that allows validating IDML files against the official schema from Adobe.
 
 Feel free to visit [www.idml.dev](https://www.idml.dev) for more information!
 
