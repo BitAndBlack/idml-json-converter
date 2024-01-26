@@ -28,7 +28,7 @@
         "ext-dom": "*",
         "ext-zip": "*",
         "bitandblack/composer-helper": "^1.0",
-        "bitandblack/helpers": "^1.8",
+        "bitandblack/helpers": "^1.8 || ^2.0",
         "maennchen/zipstream-php": "^2.4",
         "symfony/console": "^6.0 || ^7.0"
     },
