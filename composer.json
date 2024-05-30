@@ -27,6 +27,7 @@
         "php": ">=8.2",
         "ext-dom": "*",
         "ext-zip": "*",
+        "ext-json": "*",
         "bitandblack/composer-helper": "^1.0",
         "bitandblack/helpers": "^1.8 || ^2.0",
         "maennchen/zipstream-php": "^3.1",
