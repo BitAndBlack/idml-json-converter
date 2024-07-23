@@ -18,6 +18,7 @@ use BitAndBlack\IdmlJsonConverter\Utils\RootElementNameFromFileName;
 use BitAndBlack\IdmlJsonConverter\ValueModifier\ValueNormalizer;
 use DOMException;
 use ZipStream\Exception\OverflowException;
+use ZipStream\Option\Archive;
 use ZipStream\ZipStream;
 
 readonly class JSON
@@ -38,7 +39,11 @@ readonly class JSON
             throw FailedExtractingContentExpection::phpMemory();
         }
 
-        $zipStream = new ZipStream(outputStream: $outputStream);
+        $archive = new Archive();
+        $archive->setOutputStream($outputStream);
+        $archive->setSendHttpHeaders(false);
+
+        $zipStream = new ZipStream(null, $archive);
 
         foreach ($content as $fileName => $fileContent) {
             $valueNormalizer = new ValueNormalizer($fileContent);

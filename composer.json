@@ -26,11 +26,11 @@
     "require": {
         "php": ">=8.2",
         "ext-dom": "*",
-        "ext-zip": "*",
         "ext-json": "*",
+        "ext-zip": "*",
         "bitandblack/composer-helper": "^1.0",
         "bitandblack/helpers": "^1.8 || ^2.0",
-        "maennchen/zipstream-php": "^3.1",
+        "maennchen/zipstream-php": "^2.4",
         "symfony/console": "^6.0 || ^7.0"
     },
     "require-dev": {
