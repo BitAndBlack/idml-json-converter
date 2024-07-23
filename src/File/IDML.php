@@ -29,6 +29,8 @@ class IDML
 
     private bool $prettifyOutput;
 
+    private bool $unescapeOutput = true;
+
     /**
      * @throws CannotReadFileException
      */
@@ -116,6 +118,10 @@ class IDML
             $jsonFlags |= JSON_PRETTY_PRINT;
         }
 
+        if ($this->isUnescapeOutput()) {
+            $jsonFlags |= JSON_UNESCAPED_UNICODE;
+        }
+
         try {
             $json = json_encode(
                 $this->getContent(),
@@ -137,5 +143,16 @@ class IDML
     public function isPrettifyOutput(): bool
     {
         return $this->prettifyOutput;
+    }
+
+    public function setUnescapeOutput(bool $unescapeOutput): self
+    {
+        $this->unescapeOutput = $unescapeOutput;
+        return $this;
+    }
+
+    public function isUnescapeOutput(): bool
+    {
+        return $this->unescapeOutput;
     }
 }
