@@ -29,7 +29,7 @@ class IDML
 
     private bool $prettifyOutput;
 
-    private bool $unescapeOutput = false;
+    private bool $unescapeOutput;
 
     /**
      * @throws CannotReadFileException
@@ -37,6 +37,7 @@ class IDML
     public function __construct(string $file)
     {
         $this->prettifyOutput = true;
+        $this->unescapeOutput = true;
 
         $zipArchive = new ZipArchive();
 
