@@ -29,7 +29,7 @@ class IDML
 
     private bool $prettifyOutput;
 
-    private bool $unescapeOutput = true;
+    private bool $unescapeOutput = false;
 
     /**
      * @throws CannotReadFileException
