@@ -1,5 +1,4 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/bitandblack/idml-json-converter)](http://www.php.net)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc9b41c3e415497aaf6dcf81f20d1351)](https://app.codacy.com/gh/BitAndBlack/idml-json-converter/dashboard)
 [![Total Downloads](https://poser.pugx.org/bitandblack/idml-json-converter/downloads)](https://packagist.org/packages/bitandblack/idml-json-converter)
 [![License](https://poser.pugx.org/bitandblack/idml-json-converter/license)](https://packagist.org/packages/bitandblack/idml-json-converter)
 
@@ -19,8 +18,6 @@ Using this converter allows a __simple handling of IDML__ files in PHP.
 
 -   __Extracting__ information is easy, because you only need to navigate through an array, that holds the whole content of an IDML file.
 -   __Manipulating__ information is easy, because you can change all values by your needs. This allows handling of placeholders, that have been added in Adobe InDesign.
-
-__Please note__ that the IDML-JSON Converter doesn't interpret the values inside an IDML. That means that you, for example, need to calculate positions of elements by your own.
 
 ## Example
 
@@ -49,7 +46,7 @@ Add option `-h` to get more information about the usage of a command.
 
 ### Custom
 
-Instead of using the CLI, it is also possible to converts the contents manually.
+Instead of using the CLI, it is also possible to convert the contents manually.
 
 #### Converting an IDML file
 
@@ -84,6 +81,8 @@ The array contains the name of each file and its content then. For example:
 ```
 
 You can use the `getJSON()` method to return the content converted into a JSON string.
+
+The JSON content will be prettified per default. You can disable that behaviour, for example, to save space on your file system: `$idml->setPrettifyOutput(false)`.
 
 #### Converting JSON content
 
