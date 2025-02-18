@@ -41,8 +41,8 @@ class AttributeSplitter
     {
         $this->content = ArrayHelper::recurse(
             $content,
-            function (string|int|float|bool|null $value, string|int $key = null): mixed {
-                if (in_array($key, $this->attributesSplittable)) {
+            function (string|int|float|bool|null $value, string|int|null $key = null): mixed {
+                if (in_array($key, $this->attributesSplittable, true)) {
                     return explode(' ', (string) $value);
                 }
 
