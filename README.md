@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://www.bitandblack.com" target="_blank">
-        <img src="https://www.bitandblack.com/build/images/preview-default.jpg" alt="Bit&Black Logo" width="400">
+        <img src="https://www.bitandblack.com/build/images/BitAndBlack-Logo-Full.png" alt="Bit&Black Logo" width="400">
     </a>
 </p>
 
