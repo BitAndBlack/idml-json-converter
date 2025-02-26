@@ -28,6 +28,7 @@ class RootElementNameFromFileName implements Stringable
         'Resources/Preferences.xml' => 'idPkg:Preferences',
         'Resources/Styles.xml' => 'idPkg:Styles',
         'XML/BackingStory.xml' => 'idPkg:BackingStory',
+        'XML/Mapping.xml' => 'idPkg:Mapping',
         'XML/Tags.xml' => 'idPkg:Tags',
     ];
 
