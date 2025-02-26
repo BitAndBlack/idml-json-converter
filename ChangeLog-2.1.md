@@ -4,4 +4,4 @@
 
 ### Changed
 
--   Improve support for PHP 8.4
+-   Improved support for PHP 8.4.
