@@ -30,8 +30,8 @@ function includeIfExists(string $file): mixed
 if ((false === $loader = includeIfExists(dirname(__FILE__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php'))
     && (false === $loader = includeIfExists(dirname(__FILE__, 4) . DIRECTORY_SEPARATOR . 'autoload.php'))
 ) {
-    $msg = 'Run Composer at first to install all the dependencies: "$ composer install"'.PHP_EOL;
-    fwrite(STDERR, $msg);
+    $message = 'Run Composer at first to install all the dependencies: "$ composer install".' . PHP_EOL;
+    fwrite(STDERR, $message);
     exit(1);
 }
 

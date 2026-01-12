@@ -19,6 +19,7 @@ readonly class MemoryLimit implements Stringable
 
     public function __construct()
     {
+        /** @var string|false $memoryLimit */
         $memoryLimit = ini_get('memory_limit');
 
         if (false === $memoryLimit) {

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Bit&Black IDML-JSON Converter.
  *
@@ -17,7 +19,7 @@ use Generator;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
-class DomNodeToArrayConverterTest extends TestCase
+final class DomNodeToArrayConverterTest extends TestCase
 {
     /**
      * @var DOMDocument
