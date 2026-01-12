@@ -70,8 +70,11 @@ class IDML
                     $content
                 );
 
+                $libXmlNoError = 32;
+                $libXmlNoWarning = 64;
+
                 $domDocument = new DOMDocument();
-                $domDocument->loadXML($content);
+                $domDocument->loadXML($content, $libXmlNoError | $libXmlNoWarning);
 
                 $node = $domDocument->documentElement;
 
