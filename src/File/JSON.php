@@ -39,7 +39,8 @@ readonly class JSON
         }
 
         $zipStream = new ZipStream(
-            outputStream: $outputStream
+            outputStream: $outputStream,
+            sendHttpHeaders: false,
         );
 
         foreach ($content as $fileName => $fileContent) {
