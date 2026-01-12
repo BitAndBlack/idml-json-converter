@@ -36,6 +36,13 @@ if ((false === $loader = includeIfExists(dirname(__FILE__, 2) . DIRECTORY_SEPARA
 }
 
 $application = new Application('IDML-JSON converter');
-$application->add(new IDMLConvertJSONCommand());
-$application->add(new JSONConvertIDMLCommand());
+
+if (true === method_exists($application, 'add')) {
+    $application->add(new IDMLConvertJSONCommand());
+    $application->add(new JSONConvertIDMLCommand());
+} else {
+    $application->addCommand(new IDMLConvertJSONCommand());
+    $application->addCommand(new JSONConvertIDMLCommand());
+}
+
 $application->run();
